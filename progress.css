@@ -11,29 +11,39 @@ body {
     height: 100vh;
     color: #333;
   }
+
+
   
   
 
 
 
 /* Header styling */
+
+
+
+/* Header styling */
 header {
-  background-color: #3333337a;
+  background-color: rgba(51, 51, 51, 0.85);
   color: white;
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 nav ul {
   list-style-type: none;
   padding: 0;
   display: flex;
   justify-content: center;
   margin: 0;
+  
 }
 
-nav ul li {
-  margin: 0 15px;
-}
+
 
 .nav-button {
   color: white;
@@ -43,6 +53,7 @@ nav ul li {
   border-radius: 5px;
   transition: background-color 0.3s, transform 0.3s;
   display: inline-block;
+  margin: 16px;
 }
 
 .nav-button:hover {
@@ -50,10 +61,11 @@ nav ul li {
   transform: scale(1.05);
 }
 
+
 /* Main content styling */
 main {
   padding: 50px 20px;
-  background-color: rgba(255, 255, 255, 0.051);
+  background-color: rgba(255, 255, 255, 0.116);
   border-radius: 10px;
   margin: 30px auto;
   max-width: 800px;
@@ -62,13 +74,15 @@ main {
 
 h2 {
   margin-top: 0;
-  color:white;
+  color: white;
 }
 
 h3 {
   margin-top: 0;
-  color:white;
+  color: white;
 }
+
+
 
 /* Sections styling */
 #grades, #courses-completed, #goals {
@@ -78,21 +92,13 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
+
+  margin: 16px ;
 }
 
-ul li {
-  background-color: #f0f0f0;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  transition: transform 0.3s, background-color 0.3s;
-}
 
-ul li:hover {
-  background-color: #007BFF;
-  color: white;
-  transform: scale(1.05);
-}
+
+
 
 button {
   padding: 10px 20px;
@@ -138,4 +144,3 @@ footer .footer-logo img {
   width: 50px;
   height: auto;
 }
-  
